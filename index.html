@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta id="meta-desc" name="description"
+    content="Web home for the Workshop for Neural Representation Learning for Robot Manipulation @ CoRL2023">
+  <meta id="meta-author" name="author" content="Jishnu Jaykumar P">
+  <title id="title"></title>
+
+  <link href="./assets/css/fonts.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./assets/css/academic.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="icon" href="#">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHTS66Q6JT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JHTS66Q6JT');
+  </script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body pad-zero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 id="project-name" class="title is-1 publication-title"></h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <h1 id="conference-details"></h1>
+                <h1 id="workshop-date" class="is-4"></h1>
+              </span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- Contact Link. -->
+                <!-- <span class="link-block">
+                  <a href="./call-for-presentations" class="external-link button is-normal is-rounded is-warning" style="box-shadow: 0px 0px 5px 0px lightgrey">
+                    <span class="icon">
+                      <i class="fas fa-newspaper"></i>
+                    </span>
+                    <span>Call-for-Presentations</span>
+                  </a>
+                </span>
+                <br> -->
+
+                <!-- Zoom Link. -->
+                <!-- span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-primary" style="box-shadow: 0px 0px 5px 0px lightgrey">
+                    <span class="icon">
+                      <i class="fa fa-video"></i>
+                    </span>
+                    <span>Join Online</span>
+                  </a>
+                </span>
+                <br-->
+
+                <!-- Recording. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/playlist?list=PL1A3o7iF8HvI33TkcU3-Z_gU0gs7f0Lhj" class="external-link button is-normal is-rounded is-primary" style="box-shadow: 0px 0px 5px 0px lightgrey">
+                    <span class="icon">
+                      <i class="fa fa-video"></i>
+                    </span>
+                    <span>Recordings</span>
+                  </a>
+                </span>
+                <br>
+                
+                <!-- Speakers. -->
+                <span class="link-block">
+                  <a href="#speakers" class="external-link button is-normal is-rounded is-danger">
+                    <span class="icon">
+                      <i class="fas fa-users icon"></i>
+                    </span>
+                    <span>Speakers</span>
+                  </a>
+                </span>
+
+                <!-- Organizers. -->
+                <span class="link-block">
+                  <a href="#organizers" class="external-link button is-normal is-rounded is-warning">
+                    <span class="icon">
+                      <i class="fas fa-users icon"></i>
+                    </span>
+                    <span>Organizers</span>
+                  </a>
+                </span>
+
+                <!-- Schedule Link. -->
+                <span class="link-block">
+                  <a href="#schedule" class="external-link button is-normal is-rounded is-info">
+                    <span class="icon">
+                      <i class="far fa-calendar-alt icon"></i>
+                    </span>
+                    <span>Schedule</span>
+                  </a>
+                </span>
+
+
+                <!-- Contact Link. -->
+                <span class="link-block">
+                  <a href="#contact" class="external-link button is-normal is-rounded is-success">
+                    <span class="icon">
+                      <i class="fas fa-address-book icon"></i>
+                    </span>
+                    <span>Contact</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Overview. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              Representations of scenes and objects play a crucial role in robot manipulation. Traditional ways
+              represent scenes and objects using explicit geometric primitives, such as 3D meshes, 3D point clouds, 3D
+              voxels, etc. These geometric representations have been widely explored in perception, grasp planning and
+              motion planning in manipulation. However, they still have difficulties in handling challenging
+              manipulation scenarios involving unseen objects, articulated objects, or deformable objects. Recently,
+              neural representations of scenes and objects, such as neural radiance fields and deep signed distance
+              fields, have introduced, which demonstrate superior performance on visual rendering and shape
+              reconstruction tasks. Ideally, neural representations can handle arbitrary scenes and objects by encoding
+              them into neural networks. However, how to learn these representations from data and how to utilize them
+              for robot manipulation remain as open questions.
+              This workshop will represent a great opportunity to bring together experts who are exploring neural
+              representations for robot manipulation, and provide an arena for stimulating discussion and debate on
+              neural representation learning for robot manipulation. Specific questions we aim to address include:
+            <ul>
+              <li>
+                What neural representations are useful for robot manipulation?
+              </li>
+              <li>
+                What should a neural representation capture (geometry, visual appearance, dynamics, etc.) for robot
+                manipulation?
+              </li>
+              <li>
+                How to learn and use neural representations for robot manipulation?
+              </li>
+              <li>
+                How to benchmark the progress in neural representation learning for robot manipulation?
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Overview. -->
+    </div>
+  </section>
+
+
+  <section id="speakers" class="section">
+    <!-- Speakers. -->
+    <div class="container is-max-desktop">
+      <h2 class="center title is-3">Confirmed Speakers</h2>
+      <div id="talk-content1" class="columns is-centered"></div>
+      <div id="talk-content2" class="columns is-centered"></div>
+      <!--/ Speakers. -->
+  </section>
+
+  <section id="accepted-presentations" class="section">
+    <div class="container is-max-desktop">
+      <!-- Accepted Presentations. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Accepted Presentations</h2>
+          <!-- <span class="has-text-success bold">If you are interested in presenting your work, please check out the <a class="has-text-info" href="./call-for-presentations/" target="_blank" rel="noopener noreferrer">Call for Presentations</a> page.</span> -->
+          <!-- Coming soon. Thanks for your patience. -->
+          <!-- <div class="has-text-danger bold"><i class="fa fa-info-circle" aria-hidden="true"></i> Spotlight and poster presenter details will be updated after acceptance notification is sent.<br>For reference, a sample list is depicted below.</div><br> -->
+          <div id="ppt-list" class="content has-text-justified"></div>
+      </div>
+    </div>
+    <!--/ Accepted Presentations. -->
+    </div>
+  </section>
+
+  <section id="organizers" class="section">
+    <!-- Organizers. -->
+    <div class="container is-max-desktop">
+      <h2 class="center title is-3">Organizers</h2>
+      <div id="organizer-content-1" class="columns is-centered"></div>
+      <div id="organizer-content-2" class="columns is-centered"></div>
+      <div id="organizer-affiliation-logo-content" class="columns is-centered"></div>
+      <!--/ Organizers. -->
+  </section>
+
+  <section id="schedule" class="section">
+    <div class="container is-max-desktop">
+      <!-- Schedule. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <!-- <h2 class="title is-3">Tentative Schedule</h2> -->
+          <h2 class="title is-3">Schedule</h2>
+          <div class="content center has-text-justified">
+            <!-- Coming soon. Thanks for your patience. -->
+            <!-- <div class="has-text-danger bold"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Specific details will be coming soon. Thanks for your patience.</div><br> -->
+            <div class="table-container">
+              <table id="schedule-table" class="table">
+                <tbody id="schedule-table-body">
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--/ Schedule. -->
+      </div>
+  </section>
+
+
+  <section id="schedule" class="section">
+    <div class="container is-max-desktop">
+      <!-- Related Workshop -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Related Workshops</h2>
+          <div class="content has-text-centered">
+              <a href="https://sites.google.com/view/rap4robots" target="_blank">Workshop on effective Representations, Abstractions, and Priors for Robot Learning (RAP4Robots)</a><br><br>
+              <a href="https://sites.google.com/view/neural-fields" target="_blank">Neural Fields across Fields: Methods and Applications of Implicit Neural Representations (Neural-Fields)</a><br><br>
+              <a href="https://imrss2022.github.io/" target="_blank">Implicit Representations for Robotic Manipulation (IMRSS2022)</a><br><br>
+              <a href="https://neural-implicit-workshop.stanford.edu/" target="_blank">Motion Planning with Implicit Neural Representations of Geometry (Neural Implicit Workshop)</a><br><br>
+              <a href="https://rssvlrr.github.io/" target="_blank">Visual Learning and Reasoning for Robotics (RSS 2021)</a><br><br>
+              <a href="https://rss2020vlrrm.github.io/" target="_blank">Visual Learning and Reasoning for Robotic Manipulation (RSS 2020)</a><br><br>
+          </div>
+      </div>
+    </div>
+        <!--/ Related Workshop. -->
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container is-max-desktop">
+      <!-- Contact. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Contact</h2>
+          <div class="content center has-text-justified">
+            Please feel free to send us your queries via email at <a
+              href="mailto:neurlrm.workshop@gmail.com">neurlrm.workshop@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <!--/ Contact. -->
+    </div>
+  </section>
+
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script defer src="./assets/js/fontawesome.all.min.js"></script>
+<script src="./assets/js/bulma-carousel.min.js"></script>
+<script src="./assets/js/bulma-slider.min.js"></script>
+<script src="./assets/js/config.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</html>
