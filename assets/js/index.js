@@ -221,8 +221,8 @@ $(document).ready(function () {
           </svg>
         </a-->
         <br>
-        <p>Last updated on: <span id="last-updated"></span> | Page template borrowed from <a target="_blank" href="https://irvlutd.github.io/FewSOL"><span
-              class="small-caps black-font">FewSOL</span></a>.</p>
+        <p>Last updated on: <span id="last-updated"></span> | Page template borrowed from <a target="_blank" href="https://neurl-rmw.github.io/"><span
+              class="small-caps black-font">NeuRL-RMW</span></a>.</p>
       </div>
     </div>
   </footer>`)
@@ -236,7 +236,7 @@ $(document).ready(function () {
   });
 
   // Last updated
-  var apiUrl = "https://api.github.com/repos/NeuRL-RMW/NeuRL-RMW.github.io/commits?sha=main&per_page=1";
+  var apiUrl = "https://automating-robotic-surgery-workshop.github.io/";
   $.getJSON(apiUrl, function (data) {
     var commitDate = new Date(data[0].commit.committer.date);
     var formattedDate = commitDate.toDateString();
