@@ -3,7 +3,7 @@ const conference_details = ['CoRL 2023', 'https://www.corl2023.org/', 'Muse 5', 
 const workshop_date = `September 27, 2025`
 
 const talk_speaker_details = {
-  'my': ['Michael Yip', './assets/images/talks/michael_yip.png', 'Associate Professor', 'UCSD', 'https://yip.eng.ucsd.edu/', '', ''],
+  'my': ['Michael Yip', './assets/images/talks/michael_yip.jpg', 'Associate Professor', 'UCSD', 'https://yip.eng.ucsd.edu/', '', ''],
   'jw': ['Jie Ying Wu', './assets/images/talks/jie_ying_wu.jpg', 'Assistant Professor', 'Vanderbilt University', 'https://engineering.vanderbilt.edu/bio/?pid=jieying-wu', '', ''],
   'mh': ['Minho Hwang', './assets/images/talks/minho_hwang.jpeg', 'Assistant Professor', 'DGIST', 'https://dgist.elsevierpure.com/en/persons/minho-hwang', '', ''],
   'jk': ['Ji Woong Kim', './assets/images/talks/ji_woong_kim.jpeg', 'Postdoc', 'Stanford University', 'https://sites.google.com/view/jkimrobot/home', '', ''],
