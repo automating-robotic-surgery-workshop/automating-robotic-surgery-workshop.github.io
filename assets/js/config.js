@@ -1,25 +1,19 @@
-const project_name = `Workshop for Neural Representation Learning for Robot Manipulation`
-const proj_small_caps = `<span class="small-caps">NeuRL-RMW</span>: `
-const conference_details = ['CoRL 2023', 'https://www.corl2023.org/', 'Muse 5', 'assets/images/corl23_pink_logo.jpg']
-const workshop_date = `November 6, 2023`
+const project_name = `Automating Robotic Surgery @ CoRL2025`
+const conference_details = ['CoRL 2023', 'https://www.corl2023.org/', 'Muse 5', 'assets/images/corl2025.jpg']
+const workshop_date = `September 27, 2025`
 
 const talk_speaker_details = {
-  'ss': ['Shuran Song', './assets/images/talks/shuran_song.jpg', 'Assistant Professor', 'Stanford University', 'https://shurans.github.io/', 'Policy Representation for Robot Manipulation', ''],
-  'dh': ['David Held', './assets/images/talks/david_held.jpg', 'Associate Professor', 'Carnegie Mellon University', 'http://davheld.github.io', 'Neural Object Representations for Grasping and Manipulation', 'We explore how robots can learn to reason about objects in a flexible manner using neural object representations.  First, we explore how to perform planning of long-horizon deformable object manipulation using spatial and temporal abstractions. Our method can solve sequential deformable object manipulation tasks in the real world, which require combining multiple tool-use skills such as cutting, pushing, and spreading dough with a roller.  We also explore how to formulate grasp learning as a neural field, by learning to predict a distance to a continuous manifold of valid grasps for an object. This grasp distance cost can be jointly optimized with other costs such as trajectory smoothness and collision avoidance. Overall, our work presents an approach to neural object representations that is flexible for use in a variety of manipulation settings.'],
-  'gc': ['Georgia Chalvatzaki', './assets/images/talks/Georgia-Chalvatzaki.jpg', 'Full Professor', 'TU Darmstadt', 'https://irosalab.com/people/georgia-chalvatzaki/', '', ''],
-  'pf': ['Pete Florence', './assets/images/talks/pete-florence.png', 'Senior Research Scientist', 'Google Deepmind', 'https://www.peteflorence.com', 'Robot Neonatology', "Large multimodal models are here — what has already been the impact, and where is it headed? Can the learning and development of newborn infants shed any light on how multimodal training may eventually lead to breakthrough capabilities in the core unsolved problems of robotics, such as general-purpose manipulation skills? And how does this all relate to object and scene representation learning?"],
-  'cp': ['Chris Paxton', './assets/images/talks/chris-paxton.jpeg', 'Research Scientist', 'Meta AI', 'https://cpaxton.github.io', 'Towards Home Robots: Open Vocabulary Mobile Manipulation in Unstructured Environments', 'Robots are increasingly an important part of our world, from working in factories and hospitals to driving on city streets. As robots move into more unstructured environments such as homes, however, we need new techniques that allow robots to perform complex operations with less information about the world around them. We propose a motivating north star: Open Vocabulary Mobile Manipulation, wherein robots must be able to reliably perform pick and place tasks of any object in any location in an unknown environment. Currently, a variety of powerful approaches exist for learning low-level skills or performing long-horizon manipulation, but these often assume access to model-based object detection and grasp generation. However, new approaches exist which allow for robots to plan and manipulate novel objects - building structures and rearranging scenes - while reducing these assumptions about task and object knowledge. In this talk, I will discuss recent work on how to learn these representations, combine them with robot task and motion planning, and use them to work towards robots that can operate in complex, human environments. Finally, I will discuss how we can benchmark robotics research in home environments, with a look at the HomeRobot challenge.'],
-  'cj': ['Chad Jenkins', './assets/images/talks/chad_jenkins.jpg', 'Professor', 'University of Michigan', 'https://robotics.umich.edu/profile/chad-jenkins', 'Nonparametric Belief Propagation: Differentiable, Diagnosable, and Decisive', ''],
+  'my': ['Michael Yip', './assets/images/talks/michael_yip.png', 'Associate Professor', 'UCSD', 'https://yip.eng.ucsd.edu/', '', ''],
+  'jw': ['Jie Ying Wu', './assets/images/talks/jie_ying_wu.jpg', 'Assistant Professor', 'Vanderbilt University', 'https://engineering.vanderbilt.edu/bio/?pid=jieying-wu', '', ''],
+  'mh': ['Minho Hwang', './assets/images/talks/minho_hwang.jpeg', 'Assistant Professor', 'DGIST', 'https://dgist.elsevierpure.com/en/persons/minho-hwang', '', ''],
+  'jk': ['Ji Woong Kim', './assets/images/talks/ji_woong_kim.jpeg', 'Postdoc', 'Stanford University', 'https://sites.google.com/view/jkimrobot/home', '', ''],
+  'aa': ['Alaa Eldin Abdelaal', './assets/images/talks/alaa_eldin_abdelaal.png', 'Postdoc', 'Stanford University', 'https://stanford.edu/~abdelaal/', '', ''],
 }
 
 const organizers_details = [
-  ['Karthik Desingh', 'assets/images/organizers/karthik_desingh.jpeg', 'Assistant Professor', 'University of Minnesota, Twin Cities', 'https://karthikdesingh.com'],
-  ['Changhyun Choi', 'assets/images/organizers/Changhyun_Choi.jpg', 'Assistant Professor', 'University of Minnesota, Twin Cities', 'https://cse.umn.edu/ece/changhyun-choi'],
-  ['Yu Xiang', 'assets/images/organizers/Yu_Xiang.jpg', 'Assistant Professor', 'The University of Texas at Dallas', 'https://yuxng.github.io'],
-  ['Jishnu Jaykumar Padalunkal', 'assets/images/organizers/Jishnu-Jaykumar-Padalunkal.jpg', 'PhD Student', 'The University of Texas at Dallas', 'https://jishnujayakumar.github.io'],
-  ['Ninad Khargonkar', 'assets/images/organizers/Ninad-Khargonkar.jpg', 'PhD Student', 'The University of Texas at Dallas', 'https://kninad.github.io'],
-  ['Sai Haneesh Allu', 'assets/images/organizers/Sai-Haneesh-Allu.webp', 'PhD Student', 'The University of Texas at Dallas', 'https://www.linkedin.com/in/sai-haneesh-allu'],
-  ['Alireza Rezazadeh', 'assets/images/organizers/Alireza-Rezazadeh.png', 'PhD Student', 'University of Minnesota, Twin Cities', 'https://www.alireza.page'],
+  ['Youngwoon Lee', 'assets/images/organizers/youngwoon_lee.jpg', 'Assistant Professor', 'Yonsei University', 'https://youngwoon.github.io/youngwoon'],
+  ['Joseph J. Lim', 'assets/images/organizers/joseph_lim.png', 'Associate Professor', 'KAIST', 'https://clvrai.com/web_lim/'],
+  ['Minho Heo', 'assets/images/organizers/minho_heo.jpg', 'PhD Student', 'KAIST', 'https://minoring.github.io/'],
 ]
 
 const accepted_presentations = [
@@ -49,17 +43,22 @@ const org_affiliation_logos = [
 // event-alias, time slot, event name, person alias from talk_speaker_details, ppt mode
 // last two are for inv-talk event-alias entries
 const schedule = [
-  ['intro', '08:45 - 09:00', 'Introduction'],
-  ['inv-talk', '09:00 - 09:30', 'Invited Talk', 'dh', 'in-person'],
-  ['spot-ppt', '09:30 - 10:30', 'Spotlight Presentations'],
-  ['coffee-break', '10:30 - 11:30', '<span class="bold has-text-info">Spotlight Posters (Muse 1)</span> & Coffee Break'],
-  ['inv-talk', '11:30 - 12:00', 'Invited Talk', 'cp', 'online'],
-  ['inv-talk', '12:00 - 12:30', 'Invited Talk',  'gc', 'in-person'],
-  ['lunch-break', '12:30 - 14:00', 'Lunch Break'],
-  ['inv-talk', '14:00 - 14:30', 'Invited Talk', 'pf', 'online'],
-  ['spot-ppt', '14:30 - 15:30', 'Spotlight presentations'],
-  ['coffee-break', '15:30 - 16:00', 'Coffee Break'],
-  ['inv-talk', '16:00 - 16:30', 'Invited Talk', 'ss', 'in-person'],
-  ['inv-talk', '16:30 - 17:00', 'Invited Talk', 'cj', 'in-person'],
-  ['disc', '17:00 - 17:05', 'Conclusion'], 
+//   ['intro', '08:45 - 09:00', 'Introduction'],
+  ['inv-talk', '13:30 - 13:50', 'Invited Talk :', 'my', 'in-person'],
+  ['inv-talk', '13:50 - 14:10', 'Invited Talk :', 'jw', 'in-person'],
+  ['spot-ppt', '14:10 - 14:30', 'Poster Spotlight'],
+  ['coffee-break', '14:30 - 15:30', 'Coffee Break'],
+  ['inv-talk', '15:00 - 15:20', 'Invited Talk :', 'mh', 'in-person'],
+  ['inv-talk', '15:20 - 15:35', 'Invited Talk :', 'jk', 'in-person'],
+  ['inv-talk', '15:35 - 15:50', 'Invited Talk :', 'aa', 'in-person'],
+  ['disc', '15:50 - 16:30', 'Panel Discussion'], 
+//   ['inv-talk', '11:30 - 12:00', 'Invited Talk', 'cp', 'online'],
+//   ['inv-talk', '12:00 - 12:30', 'Invited Talk',  'gc', 'in-person'],
+//   ['lunch-break', '12:30 - 14:00', 'Lunch Break'],
+//   ['inv-talk', '14:00 - 14:30', 'Invited Talk', 'pf', 'online'],
+//   ['spot-ppt', '14:30 - 15:30', 'Spotlight presentations'],
+//   ['coffee-break', '15:30 - 16:00', 'Coffee Break'],
+//   ['inv-talk', '16:00 - 16:30', 'Invited Talk', 'ss', 'in-person'],
+//   ['inv-talk', '16:30 - 17:00', 'Invited Talk', 'cj', 'in-person'],
+//   ['disc', '17:00 - 17:05', 'Conclusion'], 
 ]

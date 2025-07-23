@@ -81,14 +81,93 @@ font-style: italic;
 }
 
 .display-image, .organizer-affiliation-logo-content-image {
-  width: 9rem !important; /* Adjust the desired width */
-  height: 9rem !important; /* Set the same value as width to make it a square */
+  width: 10rem !important; /* Adjust the desired width */
+  height: 10rem !important; /* Set the same value as width to make it a square */
   object-fit: cover !important; /* Preserve the image's aspect ratio and cover the container */
-  border-radius: 30%;
+  border-radius: 50%;
 }
 
 .organizer-affiliation-logo-content-image {
   width: 15rem !important; /*Adjust the desired width */
   height: 15rem !important; /*Set the same value as width to make it a square*/
   border-radius: 0% !important;
+}
+
+/* Speaker layout styles for side-by-side image and text */
+.speaker-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.speaker-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.speaker-item {
+  display: flex;
+  align-items: center;
+  width: 49%;
+  margin-bottom: 3rem;
+  margin-right: 0;
+}
+
+.speaker-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.speaker-image {
+  width: 10rem !important;
+  height: 10rem !important;
+  object-fit: cover !important;
+  border-radius: 50%;
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.speaker-info {
+  flex: 1;
+  text-align: left;
+  /* font-size: 0.95rem; */
+  line-height: 1.3;
+}
+
+.speaker-info div {
+  margin-bottom: 0.2rem;
+}
+
+.speaker-info a {
+  /* font-weight: bold; */
+  text-decoration: none;
+  color: #3273dc;
+}
+
+.speaker-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+  .speaker-item {
+    max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .speaker-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .speaker-info {
+    text-align: center;
+  }
 }

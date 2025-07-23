@@ -24,6 +24,46 @@ function populate_people_html(html_id, details, row_split_idx){
     // $(`#${html_id}`).html($(`#${html_id}`).html() + content_html)
 }
 
+function populate_speakers_html(html_id, details) {
+    let content_html = `<div class="speaker-container">`
+    
+    // Split speakers into rows of 2
+    for(var i = 0; i < details.length; i += 2) {
+      content_html += `<div class="speaker-row">`
+      
+      // Add first speaker in the row
+      let detail1 = details[i]
+      content_html += `
+        <div class="speaker-item">
+          <img class="speaker-image" src="${detail1[1]}" alt="${detail1[0]}">
+          <div class="speaker-info">
+            <div><a href="${detail1[4]}" target="_blank">${detail1[0]}</a></div>
+            <div>${detail1[2]}</div>
+            <div>${detail1[3]}</div>
+          </div>
+        </div>`
+      
+      // Add second speaker in the row if exists
+      if(i + 1 < details.length) {
+        let detail2 = details[i + 1]
+        content_html += `
+          <div class="speaker-item">
+            <img class="speaker-image" src="${detail2[1]}" alt="${detail2[0]}">
+            <div class="speaker-info">
+              <div><a href="${detail2[4]}" target="_blank">${detail2[0]}</a></div>
+              <div>${detail2[2]}</div>
+              <div>${detail2[3]}</div>
+            </div>
+          </div>`
+      }
+      
+      content_html += `</div>`
+    }
+    
+    content_html += `</div>`
+    $(`#${html_id}`).html(content_html)
+}
+
 function populate_affiliatons(html_id, details){
   // content
   let content_html = ``
@@ -87,21 +127,19 @@ function animate_hidden_content(hidden_content){
 }
 
 $(document).ready(function () {
-  $('#meta-desc').attr('content', `Web home for ${project_name} @ ${conference_details[0]}`);
+  $('#meta-desc').attr('content', `Web home for ${project_name}`);
   $('#title').html(project_name);
-  $('#project-name').html(`${proj_small_caps}${project_name} @${conference_details[0].split(' ').join('')}`)
+  $('#project-name').html(`${project_name}`)
   $('#conference-details').html(`
-  <a href="${conference_details[1]}" target="_blank">
   <img src="${conference_details[3]}" width="300px" height="300px">
-  <p class="is-2"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-  ${conference_details[2]}</p>
-  </a>`)
+  `)
   $('#workshop-date').html(workshop_date)
 
-  // talk content
+  // talk content - using new speaker layout
   talk_content = Object.values(talk_speaker_details)
-  populate_people_html('talk-content1', talk_content.slice(0, 3))
-  populate_people_html('talk-content2', talk_content.slice(3, ))
+  populate_speakers_html('talk-content1', talk_content)
+  // Clear the second container since we're now using a single container for all speakers
+  $('#talk-content2').html('')
 
   // organizers content
   populate_people_html('organizer-content-1', organizers_details.slice(0, 3))
@@ -141,11 +179,15 @@ $(document).ready(function () {
 
     if (schedule_entry[0] == 'inv-talk'){
       speaker_details = talk_speaker_details[schedule_entry[3]]
-      talk_mode = schedule_entry[4] == 'online' ? `<span class='has-text-danger bold'>[Online]</span>` : ``
-      align_left = (speaker_details[5] != `` && speaker_details[6] != ``) ? "align-left" : ""
-      title = speaker_details[5] != `` ? `<h5 class="center has-text-success bold">${speaker_details[5]}</h5>` : ``
-      abstract = speaker_details[6] != `` ? `<p><span class="bold">Abstract.</span> ${speaker_details[6]}</p>` : `<p class="center">Details coming soon. Thanks for your patience.</p>`
-      title_abstract_html = ` ${talk_mode}: ${speaker_details[0]} (<span class='toggle-btn has-text-success'>Details</span>)`
+      console.log(speaker_details)
+      console.log(speaker_details[0])
+    //   talk_mode = schedule_entry[4] == 'online' ? `<span class='has-text-danger bold'>[Online]</span>` : ``
+      talk_mode = ``
+      align_left = ""
+      title = ``
+      abstract = ``
+    //   title_abstract_html = ``
+      title_abstract_html = `${speaker_details[0]}`
       hidden_row_html = `<tr class="hidden-content ${align_left}"><td colspan="2">${title}${abstract}</td></tr>`
     }
     if(['lunch-break', 'coffee-break'].includes(schedule_entry[0])){
