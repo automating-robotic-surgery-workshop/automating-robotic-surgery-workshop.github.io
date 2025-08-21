@@ -5,15 +5,17 @@ const workshop_date = `September 27, 2025`
 const talk_speaker_details = {
   'my': ['Michael Yip', './assets/images/talks/michael_yip.jpg', 'Associate Professor', 'UCSD', 'https://yip.eng.ucsd.edu/', '', ''],
   'jw': ['Jie Ying Wu', './assets/images/talks/jie_ying_wu.jpg', 'Assistant Professor', 'Vanderbilt University', 'https://engineering.vanderbilt.edu/bio/?pid=jieying-wu', '', ''],
-  'mh': ['Minho Hwang', './assets/images/talks/minho_hwang.jpeg', 'Assistant Professor', 'DGIST', 'https://dgist.elsevierpure.com/en/persons/minho-hwang', '', ''],
+//   'mh': ['Minho Hwang', './assets/images/talks/minho_hwang.jpeg', 'Assistant Professor', 'DGIST', 'https://dgist.elsevierpure.com/en/persons/minho-hwang', '', ''],
   'jk': ['Ji Woong Kim', './assets/images/talks/ji_woong_kim.jpeg', 'Postdoc', 'Stanford University', 'https://sites.google.com/view/jkimrobot/home', '', ''],
   'aa': ['Alaa Eldin Abdelaal', './assets/images/talks/alaa_eldin_abdelaal.png', 'Postdoc', 'Stanford University', 'https://stanford.edu/~abdelaal/', '', ''],
 }
 
 const organizers_details = [
-  ['Youngwoon Lee', 'assets/images/organizers/youngwoon_lee.jpg', 'Assistant Professor', 'Yonsei University', 'https://youngwoon.github.io/youngwoon'],
   ['Joseph J. Lim', 'assets/images/organizers/joseph_lim.png', 'Associate Professor', 'KAIST', 'https://clvrai.com/web_lim/'],
   ['Minho Heo', 'assets/images/organizers/minho_heo.jpg', 'PhD Student', 'KAIST', 'https://minoring.github.io/'],
+  ['Doohyun Lee', 'assets/images/organizers/doohyun.jpg', 'PhD Student', 'KAIST', 'https://dhleekr.github.io/'],
+  ['Jeongjun Kim', 'assets/images/organizers/jeongjun.jpg', 'MS Student', 'KAIST', 'https://jeongjun-kim.github.io/'],
+  ['Junseung Lee', 'assets/images/organizers/junseung.jpg', 'Undergraduate Student', 'SNU', 'https://sites.google.com/view/junseunglee/home/about'],
 ]
 
 const accepted_presentations = [
