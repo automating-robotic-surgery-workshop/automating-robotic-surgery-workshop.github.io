@@ -142,8 +142,8 @@ $(document).ready(function () {
   $('#talk-content2').html('')
 
   // organizers content
-  populate_people_html('organizer-content-1', organizers_details.slice(0, 3))
-  populate_people_html('organizer-content-2', organizers_details.slice(3, ))
+  populate_people_html('organizer-content-1', organizers_details)
+  $('#organizer-content-2').html('')
 
   // accepted presentations
   populate_accepted_presentations("ppt-list", accepted_presentations)

@@ -81,8 +81,8 @@ font-style: italic;
 }
 
 .display-image, .organizer-affiliation-logo-content-image {
-  width: 10rem !important; /* Adjust the desired width */
-  height: 10rem !important; /* Set the same value as width to make it a square */
+  width: 8rem !important; /* Adjust the desired width */
+  height: 8rem !important; /* Set the same value as width to make it a square */
   object-fit: cover !important; /* Preserve the image's aspect ratio and cover the container */
   border-radius: 50%;
 }
