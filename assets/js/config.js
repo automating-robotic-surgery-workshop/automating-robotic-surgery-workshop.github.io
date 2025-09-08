@@ -5,7 +5,7 @@ const workshop_date = `September 27, 2025`
 const talk_speaker_details = {
   'my': ['Michael Yip', './assets/images/talks/michael_yip.jpg', 'Associate Professor', 'UCSD', 'https://yip.eng.ucsd.edu/', '', ''],
   'jw': ['Jie Ying Wu', './assets/images/talks/jie_ying_wu.jpg', 'Assistant Professor', 'Vanderbilt University', 'https://engineering.vanderbilt.edu/bio/?pid=jieying-wu', '', ''],
-  'mh': ['Minho Hwang', './assets/images/talks/minho_hwang.jpeg', 'Assistant Professor', 'DGIST', 'https://dgist.elsevierpure.com/en/persons/minho-hwang', '', ''],
+  'ak': ['Alan Kuntz', './assets/images/talks/Alan.jpg', 'Assistant Professor', 'University of Utah', 'https://users.cs.utah.edu/~adk/', '', ''],
   'jk': ['Ji Woong Kim', './assets/images/talks/ji_woong_kim.jpeg', 'Postdoc', 'Stanford University', 'https://sites.google.com/view/jkimrobot/home', '', ''],
   'aa': ['Alaa Eldin Abdelaal', './assets/images/talks/alaa_eldin_abdelaal.png', 'Postdoc', 'Stanford University', 'https://stanford.edu/~abdelaal/', '', ''],
 }
@@ -48,7 +48,7 @@ const schedule = [
 //   ['intro', '08:45 - 09:00', 'Introduction'],
   ['inv-talk', '09:30 - 10:00', 'Invited Talk :', 'my', 'in-person'],
   ['inv-talk', '10:00 - 10:30', 'Invited Talk :', 'jw', 'in-person'],
-  ['inv-talk', '10:30 - 11:00', 'Invited Talk :', 'mh', 'in-person'],
+  ['inv-talk', '10:30 - 11:00', 'Invited Talk :', 'ak', 'in-person'],
   ['coffee-break', '11:00 - 11:30', 'Coffee Break'],
   ['inv-talk', '11:30 - 11:45', 'Invited Talk :', 'jk', 'in-person'],
   ['inv-talk', '11:45 - 12:00', 'Invited Talk :', 'aa', 'in-person'],
