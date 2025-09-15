@@ -3,11 +3,10 @@ const conference_details = ['CoRL 2023', 'https://www.corl2023.org/', 'Muse 5', 
 const workshop_date = `September 27, 2025`
 
 const talk_speaker_details = {
-  'my': ['Michael Yip', './assets/images/talks/michael_yip.jpg', 'Associate Professor', 'UCSD', 'https://yip.eng.ucsd.edu/', '', ''],
   'jw': ['Jie Ying Wu', './assets/images/talks/jie_ying_wu.jpg', 'Assistant Professor', 'Vanderbilt University', 'https://engineering.vanderbilt.edu/bio/?pid=jieying-wu', '', ''],
   'ak': ['Alan Kuntz', './assets/images/talks/Alan.jpg', 'Assistant Professor', 'University of Utah', 'https://users.cs.utah.edu/~adk/', '', ''],
+  'ns': ['Nikhil Shinde', './assets/images/talks/nikhil.jpg', 'PhD student', 'UCSD', 'https://sylviaherbert.com/nikhil', '', ''],
   'jk': ['Ji Woong Kim', './assets/images/talks/ji_woong_kim.jpeg', 'Postdoc', 'Stanford University', 'https://sites.google.com/view/jkimrobot/home', '', ''],
-  'aa': ['Alaa Eldin Abdelaal', './assets/images/talks/alaa_eldin_abdelaal.png', 'Postdoc', 'Stanford University', 'https://stanford.edu/~abdelaal/', '', ''],
 }
 
 const organizers_details = [
@@ -46,12 +45,11 @@ const org_affiliation_logos = [
 // last two are for inv-talk event-alias entries
 const schedule = [
 //   ['intro', '08:45 - 09:00', 'Introduction'],
-  ['inv-talk', '09:30 - 10:00', 'Invited Talk :', 'my', 'in-person'],
-  ['inv-talk', '10:00 - 10:30', 'Invited Talk :', 'jw', 'in-person'],
-  ['inv-talk', '10:30 - 11:00', 'Invited Talk :', 'ak', 'in-person'],
+  ['inv-talk', '09:30 - 10:00', 'Invited Talk :', 'jw', 'in-person'],
+  ['inv-talk', '10:00 - 10:30', 'Invited Talk :', 'ak', 'in-person'],
+  ['inv-talk', '10:30 - 11:00', 'Invited Talk :', 'ns', 'in-person'],
   ['coffee-break', '11:00 - 11:30', 'Coffee Break'],
-  ['inv-talk', '11:30 - 11:45', 'Invited Talk :', 'jk', 'in-person'],
-  ['inv-talk', '11:45 - 12:00', 'Invited Talk :', 'aa', 'in-person'],
+  ['inv-talk', '11:30 - 12:00', 'Invited Talk :', 'jk', 'in-person'],
   ['disc', '12:00 - 12:30', 'Panel Discussion'], 
 //   ['inv-talk', '11:30 - 12:00', 'Invited Talk', 'cp', 'online'],
 //   ['inv-talk', '12:00 - 12:30', 'Invited Talk',  'gc', 'in-person'],
