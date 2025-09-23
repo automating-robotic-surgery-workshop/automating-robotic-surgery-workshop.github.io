@@ -171,3 +171,16 @@ font-style: italic;
     text-align: center;
   }
 }
+
+/* Reduce spacing between organizer items */
+#organizer-content-1 {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#organizer-content-1 .column {
+  padding: 0.25rem; /* default is ~0.75rem in Bulma; tighten for denser layout */
+}

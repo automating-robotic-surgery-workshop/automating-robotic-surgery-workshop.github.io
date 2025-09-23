@@ -12,9 +12,10 @@ const talk_speaker_details = {
 const organizers_details = [
   ['Joseph J. Lim', 'assets/images/organizers/joseph_lim.png', 'Associate Professor', 'KAIST', 'https://clvrai.com/web_lim/'],
   ['Minho Heo', 'assets/images/organizers/minho_heo.jpg', 'PhD Student', 'KAIST', 'https://minoring.github.io/'],
-  ['Doohyun Lee', 'assets/images/organizers/doohyun.jpg', 'PhD Student', 'KAIST', 'https://dhleekr.github.io/'],
-  ['Jeongjun Kim', 'assets/images/organizers/jeongjun.jpg', 'MS Student', 'KAIST', 'https://jeongjun-kim.github.io/'],
-  ['Junseung Lee', 'assets/images/organizers/junseung.jpg', 'Undergraduate Student', 'SNU', 'https://sites.google.com/view/junseunglee/home/about'],
+  ['Seunghoon Kim', 'assets/images/organizers/Seunghoon.jpg', 'MS Student', 'KAIST', 'https://seunghoonkim0310.github.io/'],
+//   ['Doohyun Lee', 'assets/images/organizers/doohyun.jpg', 'PhD Student', 'KAIST', 'https://dhleekr.github.io/'],
+//   ['Jeongjun Kim', 'assets/images/organizers/jeongjun.jpg', 'MS Student', 'KAIST', 'https://jeongjun-kim.github.io/'],
+//   ['Junseung Lee', 'assets/images/organizers/junseung.jpg', 'Undergraduate Student', 'SNU', 'https://sites.google.com/view/junseunglee/home/about'],
 ]
 
 const accepted_presentations = [
