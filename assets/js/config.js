@@ -1,6 +1,6 @@
 const project_name = `Automating Robotic Surgery @ CoRL2025`
 const conference_details = ['CoRL 2023', 'https://www.corl2023.org/', 'Muse 5', 'assets/images/corl2025.jpg']
-const workshop_date = `September 27, 2025`
+const workshop_date = `September 27, 2025 (9:30AM - 12:30PM) <br> <b>Floor 3F, Room E7</b>`
 
 const talk_speaker_details = {
   'jw': ['Jie Ying Wu', './assets/images/talks/jie_ying_wu.jpg', 'Assistant Professor', 'Vanderbilt University', 'https://engineering.vanderbilt.edu/bio/?pid=jieying-wu', '', ''],
