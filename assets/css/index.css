@@ -156,19 +156,36 @@ font-style: italic;
 
 /* Responsive design for mobile */
 @media screen and (max-width: 768px) {
-  .speaker-item {
+  .speaker-container {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
+  }
+  
+  .speaker-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .speaker-item {
+    width: 100%;
+    max-width: 400px;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
   }
   
   .speaker-image {
     margin-right: 0;
     margin-bottom: 1rem;
+    align-self: center;
   }
   
   .speaker-info {
     text-align: center;
+    width: 100%;
   }
 }
 
